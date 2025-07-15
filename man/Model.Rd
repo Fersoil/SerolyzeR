@@ -6,6 +6,7 @@
 \description{
 The Model class is a wrapper around the \code{nplr} model. It allows to predict the RAU (Relative Antibody Unit) values
 directly from the MFI values of a given sample.
+trigger build
 
 The \code{nplr} model is fitted using the formula:
 \deqn{y = B + \frac{T - B}{(1 + 10^{b \cdot (x_{mid} - x)})^s},}{y = B + (T - B) / (1 + 10^(b * (x_mid - x)))^s,}
